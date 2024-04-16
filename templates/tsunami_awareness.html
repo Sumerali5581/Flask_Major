@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0leOTtnRZZHiG_nesg_GF2-ERYv0MjJKkOJIpw8U3P38yCPM5'); /* Set the background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* filter: brightness(90%) blur(5px);  */
+        }
+        section {
+            padding: 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .media {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .info-section {
+            background-color: rgba(55, 55, 55, 0.7);
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        img[src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0leOTtnRZZHiG_nesg_GF2-ERYv0MjJKkOJIpw8U3P38yCPM5"] {
+            border: 5px solid #1e1c1c; /* Add a border to the specific image */
+        }
+        img[src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBEUotXS7jU0_ZPbcPH42zbXGji1M7elxJwe_QE3YcQgnigprn"] {
+            border: 5px solid #1e1c1c; /* Add a border to the specific image */
+        }
+        img[src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRYfPliQhYqz5ewxH0PWP-pM5KvgqqQCo5fDZ-wj2qLuuCeDTy"] {
+            border: 5px solid #1e1c1c; /* Add a border to the specific image */
+        }
+        .dropdown {
+            position: relative;
+            display: inline;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            font-size: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            list-style: none;
+            display: inline;
+            padding: 12px 16px;
+            display: block;
+            align-items: flex-end;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: right;
+            font-family: "Caprasimo", serif;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 1000;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: transparent;
+            border-color: black;
+            transform: scale(1.2);
+            border-radius: 5px;
+        }
+        .logo a {
+            text-decoration: none;
+            color: red;
+            font: bolder;
+            font-size: 25px;
+            padding: 25px;
+        }
+        header {
+            position: relative;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar {
+            color: black;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 3px;
+        }
+
+        nav {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            list-style: none;
+            display: inline;
+            margin-left: 25px;
+            align-items: flex-end;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: right;
+            font-family: "Caprasimo", serif;
+            text-transform: uppercase;
+            color: black;
+            font-weight: 1000;
+            border: 2px solid transparent;
+            padding: 5px 10px;
+            transition: border-color 0.3s;
+        }
+
+        nav a:hover {
+            border-color: black;
+            transform: scale(1.5);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home">Disaster</a>
+        </div>
+        <nav>
+            <a href="home">Home</a>
+            <div class="dropdown">
+                <a href="#">Awareness</a>
+                <div class="dropdown-content">
+                    <a href="earthquake_awareness">Earthquake</a>
+                    <a href="tsunami_awareness">Tsunami</a>
+                    <a href="flood_awareness">Flood</a>
+                    <a href="landslide_awareness">Landslide</a>
+                </div>
+            </div>
+            <a href="about">About</a>
+            <a href="help">Help</a>
+            <a href="login">Login</a>
+        </nav>
+    </header>
+
+    <div class="info-section">
+        <h2><li>TSUNAMI</li></h2>
+        <ul>
+            <li>Familiarize yourself with tsunami evacuation routes and the location of higher ground in your area.</li>
+            <li>If you are near the coast and feel an earthquake, move to higher ground immediately as a tsunami may follow.</li>
+            <li>Stay away from the coast after a tsunami warning until authorities declare it safe to return, as multiple waves may occur.</li>
+        </ul>
+    </div>
+
+    <section>
+
+        <div class="media">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0leOTtnRZZHiG_nesg_GF2-ERYv0MjJKkOJIpw8U3P38yCPM5" alt="Image 1">
+        </div>
+
+        <div class="media">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBEUotXS7jU0_ZPbcPH42zbXGji1M7elxJwe_QE3YcQgnigprn" alt="Image 1">
+        </div>
+
+        <div class="media">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRYfPliQhYqz5ewxH0PWP-pM5KvgqqQCo5fDZ-wj2qLuuCeDTy" alt="Image 1">
+        </div>
+
+    </section>
+
+    <section>
+        <div class="media">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/YpKUhSk2Ff0?si=nRv3W_O30U7UNpc9" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="media">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/1ebYnhFckQk?si=ChoJ4Iky28bo9def" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="media">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/m7EDddq9ftQ?si=K4GK4YXLQd26vDAh" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="media">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/k-hI8cMn2YU?si=ZxQurqYgrCdEeR0z" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+</body>
+</html>

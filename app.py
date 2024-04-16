@@ -33,6 +33,22 @@ model = pickle.load(open('xgboost_earthquake_model.pkl', 'rb'))
 def index():  # put application's code here
     return render_template('one.html')
 
+@app.route('/earthquake_awareness')
+def earthquake_awareness():
+    return render_template('earthquake_awareness.html')
+
+@app.route('/flood_awareness')
+def flood_awareness():
+    return render_template('flood_awareness.html')
+
+@app.route('/landslide_awareness')
+def landslide_awareness():
+    return render_template('landslide_awareness.html')
+
+@app.route('/tsunami_awareness')
+def tsunami_awareness():
+    return render_template('tsunami_awareness.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')

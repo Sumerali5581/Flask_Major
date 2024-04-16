@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.watermagazine.co.uk/wp-content/uploads/2023/11/AdobeStock_478431136-1920x1080.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* filter: brightness(90%) blur(5px);  */
+        }
+
+        section {
+            padding: 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .media {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .info-section {
+            background-color: rgba(12, 12, 12, 0.7); /* Semi-transparent background color */
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        img[src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKRAttd5Or6RTLNsPdDxys5bUGFd8Vk4EGJHuKR5rK7DXpLStD"] {
+            border: 5px solid #1e1c1c; /* Add a border to the specific image */
+        }
+        img[src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQtkA_sRT_OCUS9awxdxTob5GtopwkXgxv1CYI5Uf61pvuKyS"] {
+            border: 5px solid #1e1c1c; /* Add a border to the specific image */
+        }
+        img[src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXIVPT7WJKTS6mvYHfdn5qJPMAcNCd2j87RaHTWk6-FLkqbLVH"] {
+            border: 5px solid #1e1c1c; /* Add a border to the specific image */
+        }
+        .dropdown {
+            position: relative;
+            display: inline;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            font-size: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            list-style: none;
+            display: inline;
+            padding: 12px 16px;
+            display: block;
+            align-items: flex-end;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: right;
+            font-family: "Caprasimo", serif;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 1000;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: transparent;
+            border-color: black;
+            transform: scale(1.2);
+            border-radius: 5px;
+        }
+        .logo a {
+            text-decoration: none;
+            color: red;
+            font: bolder;
+            font-size: 25px;
+            padding: 25px;
+        }
+        header {
+            position: relative;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar {
+            color: black;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 3px;
+        }
+
+        nav {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            list-style: none;
+            display: inline;
+            margin-left: 25px;
+            align-items: flex-end;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: right;
+            font-family: "Caprasimo", serif;
+            text-transform: uppercase;
+            color: black;
+            font-weight: 1000;
+            border: 2px solid transparent;
+            padding: 5px 10px;
+            transition: border-color 0.3s;
+        }
+
+        nav a:hover {
+            border-color: black;
+            transform: scale(1.5);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home">Disaster</a>
+        </div>
+        <nav>
+            <a href="home">Home</a>
+            <div class="dropdown">
+                <a href="#">Awareness</a>
+                <div class="dropdown-content">
+                    <a href="earthquake_awareness">Earthquake</a>
+                    <a href="tsunami_awareness">Tsunami</a>
+                    <a href="flood_awareness">Flood</a>
+                    <a href="landslide_awareness">Landslide</a>
+                </div>
+            </div>
+            <a href="about">About</a>
+            <a href="help">Help</a>
+            <a href="login">Login</a>
+        </nav>
+    </header>
+
+    <div class="info-section">
+        <h2><li>FLOOD</li></h2>
+        <ul>
+            <li>Stay informed about flood risks in your area and be prepared to evacuate if necessary.</li>
+            <li>Never attempt to walk, swim, or drive through floodwaters, as they may be deeper or faster-flowing than they appear.</li>
+            <li>Keep important documents, such as identification and insurance papers, in a waterproof container and store them in a safe place.</li>
+        </ul>
+    </div>
+
+    <section>
+
+        <div class="media">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKRAttd5Or6RTLNsPdDxys5bUGFd8Vk4EGJHuKR5rK7DXpLStD" alt="Image 1">
+        </div>
+
+        <div class="media" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQtkA_sRT_OCUS9awxdxTob5GtopwkXgxv1CYI5Uf61pvuKyS" alt="Image 1">
+        </div>
+
+        <div class="media">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXIVPT7WJKTS6mvYHfdn5qJPMAcNCd2j87RaHTWk6-FLkqbLVH" alt="Image 1">
+        </div>
+
+    </section>
+
+    <section>
+        <div class="media">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/43M5mZuzHF8?si=oU1htUM3V2JIWvqT" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="media">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/SgScj6-NzQg?si=4uC5DVV-RASGzSt-" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="media">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/dvuGyLZh-og?si=u6sSIcgvVVvfErlM" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="media">
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/LiZ5hryi2Sw?si=0ACOWeY_-Yb9E5yp" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+</body>
+</html>

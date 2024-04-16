@@ -138,50 +138,76 @@
             color: red;
             font: bolder;
             font-size: 25px;
-            padding: 100px;
+            padding: 25px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+            font-size: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            list-style: none;
+            display: inline;
+            padding: 12px 16px;
+            display: block;
+            align-items: flex-end;
+            text-decoration: none;
+            font-size: 20px;
+            text-align: right;
+            font-family: "Caprasimo", serif;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 1000;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: transparent;
+            border-color: black;
+            transform: scale(1.2);
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
-<header class="navbar">
-    <div class="logo">
-        <a href="#">Disaster</a>
-    </div>
-    <nav>
-        <a href="home">Home</a>
-        <a href="about">About</a>
-        <a href="help">Help</a>
-        <a href="login">Login</a>
-    </nav>
-</header>
+<header>
+        <div class="logo">
+            <a href="home">Disaster</a>
+        </div>
+        <nav>
+            <a href="home">Home</a>
+            <div class="dropdown">
+                <a href="#">Awareness</a>
+                <div class="dropdown-content">
+                    <a href="earthquake_awareness">Earthquake</a>
+                    <a href="tsunami_awareness">Tsunami</a>
+                    <a href="flood_awareness">Flood</a>
+                    <a href="landslide_awareness">Landslide</a>
+                </div>
+            </div>
+            <a href="about">About</a>
+            <a href="help">Help</a>
+            <a href="login">Login</a>
+        </nav>
+    </header>
 <section class="info">
-    <!-- <div class="info1">
-        <a href="earthquake">
-            <h1>Earthquake</h1>
-            <p>Leetcode is an online platform to enhance your skills and prepare for tech interviews. Their site has over
-                1900 coding problems with questions to help you prepare.</p>
-        </a>
-    </div>
-    <div class="info1">
-        <a href="tsunami">
-            <h1>Tsunami</h1>
-            <p>CodeChef is an online educational and competitive programming platform.</p>
-        </a>
-    </div>
-    <div class="info1">
-        <a href="flood">
-            <h1>Flood</h1>
-            <p>CodeChef is an online educational and competitive programming platform.</p>
-        </a>
-    </div>
-    <div class="info1">
-        <a href="landslide">
-            <h1>Landslide</h1>
-            <p>CodeChef is an online educational and competitive programming platform.</p>
-        </a>
-    </div> -->
-
     <a href="earthquake">
         <figure>
             <img
@@ -261,3 +287,4 @@
 </section>
 </body>
 </html>
+
